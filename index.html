@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace Fadil</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+  /* RUNNING TEXT */
+  .running-text {
+    width: 100%;
+    overflow: hidden;
+    background: rgb(16, 3, 255);
+    color: white;
+    font-size: 14px;
+  }
+
+  .running-text p {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: jalan 10s linear infinite;
+  }
+
+  @keyframes jalan {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  </style>
+
+</head>
+<body>
+
+  <!-- TEXT BERJALAN -->
+  <div class="running-text">
+    <p>🔥 Promo hari ini! Diskon spesial hanya di Fadil Marketplace 🔥</p>
+  </div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-container"></div>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Fadil Marketplace</h1>
+    <p>Pilihan Tepat, Belanja Hemat</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- SLIDER -->
+    <section class="slider">
+
+      <button class="prev">❮</button>
+
+      <div class="slide-container">
+
+        <!-- SLIDE 1 -->
+        <div class="slide">
+          <h2>💻 Produk PC</h2>
+          <div id="produk-slide1" class="grid"></div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="slide">
+          <h2>👕 Fashion</h2>
+          <div id="produk-slide2" class="grid"></div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="slide">
+          <h2>💄 Make Up & Skincare</h2>
+          <div id="produk-slide3" class="grid"></div>
+        </div>
+
+      </div>
+
+      <button class="next">❯</button>
+
+    </section>
+
+  </main>
+
+  <footer>@Fadil2026</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
